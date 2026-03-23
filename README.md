@@ -29,7 +29,7 @@ No GUI: This project runs entirely in the terminal as per the submission rules.
 
 Files:-
 
-main.py: The core Python code and dataset.
+main.py: The core Python code.
 
 movies.csv: Contains a curated dataset of 60+ Bollywood hits (2021-2026) for accurate genre matching.
 
