@@ -17,7 +17,6 @@ def run_bollywood_recommender():
         user_act = float(input("Action/Masala Level? : "))
         user_com = float(input("Comedy/Humor Level?  : "))
         
-        # Validation
         if not (0 <= user_act <= 10 and 0 <= user_com <= 10):
             print("Please enter a value between 1 and 10!")
             return
