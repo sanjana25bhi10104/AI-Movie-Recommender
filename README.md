@@ -17,7 +17,7 @@ Run the script:
 
   python main.py
 
-Important Setup Note: The main.py script and the movies.csv file must be kept in the same directory. The program uses a relative path to load the 150+ movie dataset. If the files are separated, you will receive a FileNotFoundError. If you are using Google Colab to test this, please upload the movies.csv to the session storage before running the script.
+Important Setup Note: The main.py script and the movies.csv file must be kept in the same directory. The program uses a relative path to load the 60+ movie dataset. If the files are separated, you will receive a FileNotFoundError. If you are using Google Colab to test this, please upload the movies.csv to the session storage before running the script.
 
 
 How it Works:-
