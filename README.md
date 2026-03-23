@@ -1,4 +1,4 @@
-# AI-Movie-Recommender
+# AI Movie Recommender
 BYOP(Bring Your Own Project) Submission
 
 Course: Fundamentals of AI and ML
