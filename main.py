@@ -9,7 +9,7 @@ def run_bollywood_recommender():
         X = df[['Action', 'Comedy']].values
         movie_titles = df['Movie'].values
 
-        print("--- 🇮🇳 Bollywood AI Matcher (2021-2026) ---")
+        print("--- Bollywood AI Matcher (2021-2026) ---")
         print(f"Total Movies in Database: {len(df)}")
         print("Finding your perfect Desi match...\n")
 
