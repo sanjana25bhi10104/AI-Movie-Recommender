@@ -1,7 +1,7 @@
 # AI Movie Recommender
 BYOP(Bring Your Own Project) Submission
 
-Course: Fundamentals of AI and ML
+Course: Fundamentals in AI and ML
 
 
 This is a simple CLI (Command Line) tool that uses the KNN algorithm to recommend a movie based on your favorite genres.
