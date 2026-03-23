@@ -7,7 +7,7 @@ Course: Fundamentals of AI and ML
 This is a simple CLI (Command Line) tool that uses the KNN algorithm to recommend a movie based on your favorite genres.
 
 
-How to Run
+How to Run:-
 
 Install dependencies:
 
@@ -18,7 +18,7 @@ Run the script:
 python main.py
 
 
-How it Works
+How it Works:-
 
 Algorithm: K-Nearest Neighbors (KNN).
 
@@ -27,9 +27,11 @@ Logic: The program takes your input (1-10 for Action and Comedy) and finds the m
 No GUI: This project runs entirely in the terminal as per the submission rules.
 
 
-Files
+Files:-
 
 main.py: The core Python code and dataset.
+
+movies.csv: Contains a curated dataset of 60+ Bollywood hits (2021-2026) for accurate genre matching.
 
 requirements.txt: Required libraries (scikit-learn, numpy).
 
