@@ -11,11 +11,13 @@ How to Run:-
 
 Install dependencies:
 
-pip install -r requirements.txt
+  pip install -r requirements.txt
 
 Run the script:
 
-python main.py
+  python main.py
+
+Important Setup Note: The main.py script and the movies.csv file must be kept in the same directory. The program uses a relative path to load the 150+ movie dataset. If the files are separated, you will receive a FileNotFoundError.
 
 
 How it Works:-
