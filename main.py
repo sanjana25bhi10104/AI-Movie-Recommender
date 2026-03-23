@@ -21,7 +21,7 @@ def run_bollywood_recommender():
             print("Please enter a value between 1 and 10!")
             return
 
-        model = NearestNeighbors(n_neighbors=3)
+        model = NearestNeighbors(n_neighbors=10)
         model.fit(X)
         distances, indices = model.kneighbors([[user_act, user_com]])
 
