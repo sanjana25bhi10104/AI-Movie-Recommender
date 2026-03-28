@@ -1,43 +1,65 @@
-
-
+import os
 import pandas as pd
 from sklearn.neighbors import NearestNeighbors
 
-def run_bollywood_recommender():
+def load_data():
+    """
+    Locates and loads movies.csv regardless of where the script is executed.
+    This prevents 'FileNotFoundError' during evaluation.
+    """
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    csv_path = os.path.join(base_dir, 'movies.csv')
+    
+    if not os.path.exists(csv_path):
+        print(f"\n[SYSTEM ERROR] Could not find 'movies.csv' at: {csv_path}")
+        print("Please ensure the CSV file is in the same folder as this script.")
+        return None
+    
+    return pd.read_csv(csv_path)
+
+def run_recommender():
+    print("="*50)
+    print("🎬 BOLLYWOOD AI MOVIE MATCHER (2021-2026)")
+    print("="*50)
+
+    movie_db = load_data()
+    if movie_db is None:
+        return
+
+    features = movie_db[['Action', 'Comedy']].values
+    titles = movie_db['Movie'].values
+
     try:
-        df = pd.read_csv('movies.csv')
-        X = df[['Action', 'Comedy']].values
-        movie_titles = df['Movie'].values
+        print("\nEnter your preferences (Scale: 1.0 to 10.0)")
+        user_action = float(input("Desired Action Level: "))
+        user_comedy = float(input("Desired Comedy Level: "))
 
-        print("--- Bollywood AI Matcher (2021-2026) ---")
-        print(f"Total Movies in Database: {len(df)}")
-        print("Finding your perfect Desi match...\n")
-
-        print("Rate what you want to watch (1 = Low, 10 = High):")
-        user_act = float(input("Action/Masala Level? : "))
-        user_com = float(input("Comedy/Humor Level?  : "))
-        
-        if not (0 <= user_act <= 10 and 0 <= user_com <= 10):
-            print("Please enter a value between 1 and 10!")
+        if not (0 <= user_action <= 10 and 0 <= user_comedy <= 10):
+            print("\n[!] Please keep scores between 1 and 10 for accurate results.")
             return
 
-        model = NearestNeighbors(n_neighbors=10)
-        model.fit(X)
-        distances, indices = model.kneighbors([[user_act, user_com]])
-
-        print(f"\nAI Recommendations for you:")
-        print("=" * 35)
-        for i in range(len(indices[0])):
-            idx = indices[0][i]
-            name = movie_titles[idx]
-            match_percent = max(0, 100 - (distances[0][i] * 10))
-            print(f"{i+1}. {name} ({match_percent:.1f}% Match)")
-        print("=" * 35)
-
-    except FileNotFoundError:
-        print("Error: 'movies.csv' not found. Upload it to GitHub first!")
     except ValueError:
-        print("Error: Please enter a number (e.g. 7 or 8.5).")
+        print("\n[!] Invalid input detected. Please enter numerical values only.")
+        return
+
+    model = NearestNeighbors(n_neighbors=10, metric='euclidean')
+    model.fit(features)
+    
+    distances, indices = model.kneighbors([[user_action, user_comedy]])
+
+    print(f"\nTop 10 Matches for Action({user_action}) & Comedy({user_comedy}):")
+    print("-" * 55)
+    print(f"{'#':<3} | {'Movie Title':<35} | {'Match'}")
+    print("-" * 55)
+
+    for i in range(len(indices[0])):
+        idx = indices[0][i]
+        dist = distances[0][i]
+        similarity = max(0, 100 - (dist * 10))
+        print(f"{i+1:<3} | {titles[idx]:<35} | {similarity:.1f}%")
+    
+    print("-" * 55)
+    print("Recommendation search complete.\n")
 
 if __name__ == "__main__":
-    run_bollywood_recommender()
+    run_recommender()
