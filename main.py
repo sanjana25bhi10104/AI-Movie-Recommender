@@ -16,8 +16,14 @@ def get_data():
     return pd.read_csv(full_path)
 
 def start_app():
+    movie_db = get_data() 
+    if movie_db is None: return
+    total_movies = len(movie_db)
     print("-" * 50)
-    print("🎬 UNIVERSAL BOLLYWOOD AI RECOMMENDER")
+    print("AI-MOVIE-RECOMMENDER")
+    print("🍿 Desi Movie Matcher: Your 2021-2026 Watchlist")
+    print(f"Total Movies in Database: {total_movies}")
+    print("Finding your perfect Desi match based on vibes...")
     print("-" * 50)
 
     df = get_data()
@@ -27,8 +33,9 @@ def start_app():
     names = df['Movie'].values
 
     try:
-        act = float(input("\nEnter Action Level (1-10): "))
-        com = float(input("Enter Comedy Level (1-10): "))
+        print("\nRate your mood (1 = None, 10 = Max Masala):")
+        act = float(input("How much Action/Masala are you craving? : "))
+        com = float(input("How much Comedy/Humor are you craving?  : "))
 
         if not (0 <= act <= 10 and 0 <= com <= 10):
             print("Please enter values between 1 and 10.")
