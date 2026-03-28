@@ -1,62 +1,129 @@
 
 Movie,Action,Comedy
-Jawan (2023),10,2
-Pathaan (2023),10,1
-Animal (2023),10,0
-Stree 2 (2024),4,10
-Bhool Bhulaiyaa 2 (2022),3,9
-Brahmastra (2022),9,3
-Drishyam 2 (2022),6,1
-The Kerala Story (2023),4,0
-Gadar 2 (2023),10,2
-Rocky Aur Rani Kii Prem Kahaani (2023),2,9
-Tiger 3 (2023),10,1
-Dunki (2023),3,8
-Tu Jhoothi Main Makkaar (2023),2,10
-Fighter (2024),10,2
-Shaitaan (2024),7,1
-Crew (2024),2,9
-Bade Miyan Chote Miyan (2024),9,5
-Maidaan (2024),6,1
-Singham Again (2024),10,4
-Bhool Bhulaiyaa 3 (2024),3,10
-Baby John (2024),10,2
-Chhaava (2024),10,1
-Welcome To The Jungle (2026),6,10
-Border 2 (2026),10,0
-Mardaani 3 (2026),9,2
-War 2 (2025),10,1
-Toxic (2025),10,2
-Ramayana: Part 1 (2026),10,2
-Spirit (2026),10,1
-Housefull 5 (2025),2,10
-Golmaal 5 (2026),4,10
-83 (2021),5,3
-Sooryavanshi (2021),10,5
-Gangubai Kathiawadi (2022),3,2
-Jugjugg Jeeyo (2022),2,8
-Vikram Vedha (2022),9,2
-Bhediya (2022),6,8
-Anniyan (Remake 2025),9,3
-Don 3 (2026),10,2
-Kalki 2898 AD (2024),10,4
-Pushpa 2: The Rule (2024),10,3
-Leo (Hindi Dub 2023),10,1
-KGF: Chapter 2 (Hindi 2022),10,1
-RRR (Hindi 2022),10,3
-Ludo (2020),4,9
-Chhorii (2021),2,1
-Atrangi Re (2021),2,7
-Minnal Murali (Hindi 2021),8,6
-Monica O My Darling (2022),5,8
-Darlings (2022),3,7
-Kathal (2023),2,9
-Munjya (2024),5,9
-Madgaon Express (2024),2,10
-Srikanth (2024),1,4
-Mr. & Mrs. Mahi (2024),3,6
-Chandu Champion (2024),6,4
-Khel Khel Mein (2024),2,10
-Vedaaa (2024),10,1
-The Buckingham Murders (2024),5,0
-Jigra (2024),9,2
+Jawan (2023),9.5,2.0
+Pathaan (2023),9.0,3.0
+Animal (2023),8.5,1.0
+Stree 2 (2024),4.0,9.5
+Bhool Bhulaiyaa 3 (2024),3.0,9.0
+Drishyam 2 (2022),2.0,1.0
+Brahmastra (2022),7.5,4.0
+Fighter (2024),9.0,2.0
+Munjya (2024),3.0,8.5
+Madgaon Express (2024),1.0,9.5
+Tiger 3 (2023),8.5,2.5
+Crew (2024),2.0,9.0
+Rocky Aur Rani (2023),2.0,8.0
+Vikram Vedha (2022),8.0,3.0
+Bhediya (2022),5.0,7.0
+War 2 (2025),9.5,1.5
+Housefull 5 (2025),2.0,9.5
+Dunki (2023),3.0,7.5
+Bholaa (2023),9.0,1.0
+Tu Jhoothi Main Makkaar (2023),2.0,8.5
+Sam Bahadur (2023),7.0,1.0
+Merry Christmas (2024),3.0,2.0
+Kill (2024),9.5,0.5
+Bad Newz (2024),2.0,9.0
+Kalki 2898 AD (2024),9.0,3.0
+Chandu Champion (2024),6.0,4.0
+Singham Again (2024),9.5,2.0
+Emergency (2024),5.0,1.0
+Metro In Dino (2025),1.0,4.0
+Raid 2 (2025),7.0,2.0
+Jolly LLB 3 (2025),3.0,9.0
+Devara (2024),9.0,2.0
+Kanguva (2024),9.0,1.0
+Animal Park (2026),9.5,1.0
+Spirit (2025),9.0,1.0
+Toxic (2025),8.5,2.0
+Ramayana: Part 1 (2025),8.0,1.0
+Love & War (2025),4.0,4.0
+Pathaan 2 (2026),9.5,2.0
+The Bull (2025),9.0,1.0
+Don 3 (2025),8.5,3.0
+SatyaPrem Ki Katha (2023),2.0,6.0
+Zara Hatke Zara Bachke (2023),2.0,8.0
+Dream Girl 2 (2023),1.0,9.5
+OMG 2 (2023),2.0,8.0
+Gadar 2 (2023),9.5,2.0
+Fukrey 3 (2023),2.0,9.5
+Tiger Nageswara Rao (2023),8.0,1.0
+Salaar: Part 1 (2023),9.5,1.0
+Main Atal Hoon (2024),4.0,1.0
+Article 370 (2024),6.0,1.0
+Lootere (2024),7.5,2.0
+Do Aur Do Pyaar (2024),1.0,7.0
+Srikanth (2024),3.0,5.0
+Shaitaan (2024),8.0,1.0
+Maidaan (2024),6.0,2.0
+Jigra (2024),7.5,2.0
+Mardaani 3 (2026),9.0,1.0
+Anniyan (Remake 2025),8.5,2.0
+83 (2021),6.0,3.0
+RRR (Hindi 2022),9.8,2.0
+Sooryavanshi (2021),9.0,4.0
+Bell Bottom (2021),7.0,2.0
+Shershaah (2021),9.0,1.0
+Mimimi (2021),1.0,8.5
+Bunty Aur Babli 2 (2021),3.0,9.0
+Antim (2021),8.5,1.0
+Chandigarh Kare Aashiqui (2021),2.0,7.0
+Atrangi Re (2021),1.0,6.0
+Badhaai Do (2022),2.0,9.0
+Gangubai Kathiawadi (2022),4.0,2.0
+The Kashmir Files (2022),3.0,0.5
+Bachchhan Paandey (2022),7.0,6.0
+Attack (2022),8.5,1.0
+Runway 34 (2022),5.0,1.0
+Bhool Bhulaiyaa 2 (2022),4.0,9.0
+Samrat Prithviraj (2022),8.0,1.0
+Nikamma (2022),7.0,5.0
+Jugjugg Jeeyo (2022),2.0,8.5
+Rashtra Kavach Om (2022),9.0,1.0
+Khuda Haafiz 2 (2022),8.5,1.0
+Shamshera (2022),8.0,2.0
+Ek Villain Returns (2022),7.5,1.0
+Liger (2022),8.0,3.0
+Cuttputlli (2022),4.0,1.0
+Goodbye (2022),1.0,8.0
+Doctor G (2022),1.0,8.5
+Ram Setu (2022),7.0,2.0
+Thank God (2022),2.0,9.0
+Phone Bhoot (2022),2.0,9.5
+Uunchai (2022),1.0,5.0
+An Action Hero (2022),8.5,6.0
+Freddy (2022),2.0,0.5
+Mission Majnu (2023),8.0,1.0
+Selfiee (2023),6.0,6.0
+Shehzada (2023),7.0,7.5
+Mrs Chatterjee vs Norway (2023),1.0,1.0
+Gumraah (2023),7.5,1.0
+Kisi Ka Bhai Kisi Ki Jaan (2023),8.5,6.0
+The Kerala Story (2023),3.0,0.5
+IB71 (2023),7.0,1.0
+Adipurush (2023),8.5,1.0
+Satyaprem Ki Katha (2023),2.0,6.5
+Neeyat (2023),2.0,1.0
+Blind (2023),6.0,1.0
+Ghoomer (2023),4.0,1.0
+Akelli (2023),7.0,0.5
+Dream Girl 2 (2023),1.0,9.8
+Jawan (2023),9.5,2.0
+The Great Indian Family (2023),1.0,7.5
+Ganapath (2023),9.0,2.0
+Tejas (2023),8.0,1.0
+Apurva (2023),7.5,0.5
+Khichdi 2 (2023),1.0,9.9
+Starfish (2023),1.0,2.0
+Main Atal Hoon (2024),2.0,1.0
+Fighter (2024),9.0,3.0
+Crakk (2024),9.5,2.0
+Laapataa Ladies (2024),1.0,9.0
+Yodha (2024),9.0,2.0
+Ae Watan Mere Watan (2024),4.0,1.0
+Swatantrya Veer Savarkar (2024),6.0,1.0
+Madgaon Express (2024),1.0,9.7
+Amar Singh Chamkila (2024),2.0,4.0
+Bhaiyya Ji (2024),9.0,2.0
+Savi (2024),6.0,1.0
+Ishq Vishk Rebound (2024),1.0,8.0
