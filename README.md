@@ -16,7 +16,7 @@ Run the script: python main.py
 Project Structure
 main.py: Core logic, input validation, and KNN implementation.
 
-movies.csv: Dataset containing 150+ categorized Bollywood films.
+movies.csv: Dataset containing 120+ categorized Bollywood films.
 
 README.md: System documentation and setup guide.
 
