@@ -4,7 +4,7 @@ BYOP(Bring Your Own Project) Submission
 Course: Fundamentals in AI and ML
 
 
-This is a simple CLI (Command Line) tool that uses the KNN algorithm to recommend a movie based on your favorite genres.
+This is a simple CLI-based Machine Learning application that uses the K-Nearest Neighbors (KNN) algorithm to recommend the top 10 Bollywood movies (2021–2026) based on user-defined Action and Comedy intensity.
 
 
 How to Run:-
@@ -13,24 +13,33 @@ Install dependencies: pip install -r requirements.txt
 
 Run the script: python main.py
 
-Important Setup Note: The main.py script and the movies.csv file must be kept in the same directory. The program uses a relative path to load the 60+ movie dataset. If the files are separated, you will receive a FileNotFoundError. If you are using Google Colab to test this, please upload the movies.csv to the session storage before running the script.
+Project Structure
+main.py: Core logic, input validation, and KNN implementation.
+
+movies.csv: Dataset containing 150+ categorized Bollywood films.
+
+README.md: System documentation and setup guide.
+
+Note: Ensure movies.csv is in the same folder as main.py before execution.
+
 
 
 How it Works:-
 
 Algorithm: K-Nearest Neighbors (KNN).
 
-Logic: The program takes your input (1-10 for Action and Comedy) and finds the movie in the database with the "closest" mathematical distance to your choice.
+Logic: The system treats movie genres as Feature Vectors on a 2D plane. When a user inputs their preference, the model calculates the Euclidean Distance between the input and the dataset to identify the 10 closest "neighbors."
 
 No GUI: This project runs entirely in the terminal as per the submission rules.
 
 
-Files:-
+Requirements & Setup:-
 
-main.py: The core Python code.
+Language: Python 3.8+
 
-movies.csv: Contains a curated dataset of 60+ Bollywood hits (2021-2026) for accurate genre matching.
+Libraries: pandas, scikit-learn, numpy
 
-requirements.txt: Required libraries (scikit-learn, numpy).
+Environment: Works on Local Terminal, VS Code, or Google Colab.
 
-README.md: This guide.
+
+
